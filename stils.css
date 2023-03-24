@@ -1,0 +1,66 @@
+/* Apply box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set font-family for body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style header */
+header {
+  background-color: #666;
+  color: white;
+  font-size: 35px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style section */
+section {
+  display: flex;
+}
+
+/* Style navigation */
+nav {
+ 
+    background-color: #ccc;
+    color: white;
+    font-size: 20px;
+  background-image: url('skola.jpg');
+  background-repeat: repeat;
+  background-size: 100% 25%;
+  flex: 1;
+  padding: 20px;
+  a:visited {
+  font-color: white;
+}
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style article */
+article {
+  background-color: #f1f1f1;
+  flex: 3;
+  padding: 10px;
+}
+
+/* Style footer */
+footer {
+  background-color: #777;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
